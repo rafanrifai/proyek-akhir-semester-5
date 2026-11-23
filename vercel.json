@@ -1,9 +1,11 @@
 {
   "version": 2,
   "framework": null,
+  "buildCommand": "echo 'No frontend build needed'",
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.6.0"
+      "runtime": "vercel-php@0.9.0",
+      "maxDuration": 30
     }
   },
   "routes": [
