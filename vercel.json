@@ -2,6 +2,7 @@
   "version": 2,
   "framework": null,
   "buildCommand": "echo 'No frontend build needed'",
+  "outputDirectory": "public",
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.9.0",
