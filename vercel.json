@@ -21,7 +21,7 @@
   ],
   "env": {
     "APP_ENV": "production",
-    "APP_DEBUG": "true",
+    "APP_DEBUG": "false",
     "VERCEL": "1",
     "APP_KEY": "base64:8lDma3u+QAPdgXXH6zoFPGGvhnLapI4yZf78+pnG+6Q=",
     "APP_CONFIG_CACHE": "/tmp/config.php",

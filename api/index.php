@@ -1,5 +1,9 @@
 <?php
 
+// Suppress deprecations and error display so headers/cookies are never corrupted
+ini_set('display_errors', '0');
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED & ~E_NOTICE & ~E_WARNING);
+
 // Pastikan direktori penyimpanan di /tmp tersedia untuk Vercel serverless
 $storageDirs = [
     '/tmp/storage/app/public',
@@ -17,4 +21,3 @@ foreach ($storageDirs as $dir) {
 
 // Teruskan request ke public/index.php Laravel
 require __DIR__ . '/../public/index.php';
-
